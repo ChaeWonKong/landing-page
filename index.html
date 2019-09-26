@@ -4,29 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>막차</title>
   </head>
   <body>
-    <div class="conA">
-      <div class="con-left">
-        <h1 class="title">막차</h1>
-        <h3 class="main-text">막차 걱정 없는 세상을 위하여</h3>
-      </div>
+    <div class="container">
+      <div class="conA">
+        <img
+          class="icon-img"
+          src="https://github.com/ChaeWonKong/image-resource/blob/master/mcha/icon.png?raw=true"
+        />
 
-      <div class="con-right">
-        <div class="screenshot">
+        <p
+          class="text-light"
+          data-aos="fade-up"
+          data-aos-anchor=".badge-container"
+          data-aos-delay="1000"
+          data-aos-duration="1600"
+        >
+          막차 걱정 없는 세상을 위하여 불철주야 노력할게요!
+        </p>
+
+        <div
+          class="badge-container"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          data-aos-duration="1600"
+        >
+          <a
+            class="anchor"
+            href="https://apps.apple.com/kr/app/%EB%A7%89%EC%B0%A8/id1480522844"
+            ><img
+              class="badge-img"
+              src="https://github.com/ChaeWonKong/image-resource/blob/master/mcha/ios-large.png?raw=true"
+          /></a>
+          <a
+            class="anchor"
+            href="https://play.google.com/store/apps/details?id=com.native_makkcha"
+            ><img
+              class="badge-img"
+              src="https://github.com/ChaeWonKong/image-resource/blob/master/mcha/android.png?raw=true"
+          /></a>
+        </div>
+        <div class="mock-con">
           <img
-            class="screenshot"
-            src="https://github.com/ChaeWonKong/image-resource/blob/master/mock.jpeg?raw=true"
+            class="mock-img"
+            data-aos="fade-up"
+            data-aos-delay="2000"
+            data-aos-duration="1600"
+            src="https://github.com/ChaeWonKong/image-resource/blob/master/mock.png?raw=true"
           />
         </div>
       </div>
+      <div class="conB">
+        <p
+          class="conB-text"
+          data-aos="slide-up"
+          data-aos-offset="0"
+          data-aos-duration="1000"
+        >
+          <b>처음 한 번만</b> 목적지를 입력해 놓으면 현재위치 기준으로 쉽고
+          빠르게 막차를 알려줘요~
+        </p>
+        <div
+          class="badge-container"
+          data-aos="fade-up"
+          data-aos-offset="0"
+          data-aos-duration="1000"
+        >
+          <a
+            class="anchor"
+            href="https://apps.apple.com/kr/app/%EB%A7%89%EC%B0%A8/id1480522844"
+            ><img
+              class="badge-img"
+              src="https://github.com/ChaeWonKong/image-resource/blob/master/mcha/ios-large.png?raw=true"
+          /></a>
+          <a
+            class="anchor"
+            href="https://play.google.com/store/apps/details?id=com.native_makkcha"
+            ><img
+              class="badge-img"
+              src="https://github.com/ChaeWonKong/image-resource/blob/master/mcha/android.png?raw=true"
+          /></a>
+        </div>
+      </div>
     </div>
-    <div class="conB">
-      <h1>다운로드 링크</h1>
-    </div>
-
-    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
