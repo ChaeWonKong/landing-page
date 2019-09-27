@@ -70,7 +70,7 @@ body {
 
 .conB {
   width: 100vw;
-  height: 100vh;
+  height: 140vh;
   background: white;
   display: flex;
   flex-direction: column;
@@ -87,14 +87,6 @@ body {
   line-height: 3rem;
 }
 
-.conB-counter {
-  text-align: center;
-  font-size: 2rem;
-  margin: 0;
-  color: white;
-  font-weight: bold;
-}
-
 .down-text {
   text-align: center;
   font-size: 2rem;
@@ -108,16 +100,65 @@ body {
   height: 10vh;
 }
 
-/* .counter-container {
-} */
-.conC {
-  width: 100vw;
-  height: 100vh;
-  background-color: #000033;
+.counter-container {
+  margin-top: 50vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.counter-main-text {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.counter-sub-text {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0;
+  /* font-weight: bold; */
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #eee;
+  width: 80%;
+  padding: 3vw;
+}
+
+.card {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  border: 1px solid #eee;
+  border-radius: 1.7vw;
+  width: 30vw;
+}
+
+.card-text {
+  margin-top: 3rem;
+}
+
+.card-inner-text {
+  margin-top: 1rem;
+}
+
+.counter-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (orientation: portrait) {
@@ -169,5 +210,44 @@ body {
     text-align: center;
     font-size: 1.2rem;
     margin: 0;
+  }
+
+  .counter-container {
+    margin-top: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .counter-main-text {
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .counter-sub-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+    /* font-weight: bold; */
+  }
+
+  .card-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    border: 1px solid #eee;
+    width: 80%;
+    padding: 4vw;
+  }
+
+  .card {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid #eee;
+    border-radius: 4vw;
+    width: 72vw;
   }
 }

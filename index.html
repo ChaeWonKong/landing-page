@@ -58,7 +58,7 @@
           data-aos-delay="1000"
           data-aos-duration="1600"
         >
-          막차 걱정 없는 세상을 위하여 불철주야 노력할게요!
+          잠깐, 막차 몇시야?
         </p>
 
         <div
@@ -89,61 +89,68 @@
         </div>
       </div>
       <div class="conB">
-        <p
-          class="conB-text"
-          data-aos="slide-up"
-          data-aos-offset="0"
-          data-aos-duration="1000"
-        >
-          <b>처음 한 번만</b> 목적지를 입력해 놓으면 현재위치 기준으로 쉽고
-          빠르게 막차를 알려줘요~
-        </p>
+        <div class="counter-container">
+          <!-- User Counter -->
+          <div
+            class="counter-inner"
+            data-aos="slide-up"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+          >
+            <div>
+              <span class="counter-main-text">대학생 </span
+              ><span id="userCounter" class="counter-main-text"></span
+              ><span class="counter-main-text">명</span>
+            </div>
 
+            <p class="counter-sub-text">누적 사용자 수</p>
+          </div>
+          <!-- Search Counter -->
+          <div
+            class="counter-inner"
+            data-aos="slide-up"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+          >
+            <div>
+              <span id="searchCounter" class="counter-main-text"></span
+              ><span class="counter-main-text">건</span>
+            </div>
+
+            <p class="counter-sub-text">누적 서비스 검색 수</p>
+          </div>
+          <!-- Time Counter -->
+          <div
+            class="counter-inner"
+            data-aos="slide-up"
+            data-aos-offset="0"
+            data-aos-duration="1000"
+          >
+            <div>
+              <span id="timeCounter" class="counter-main-text"></span
+              ><span class="counter-main-text">초</span>
+            </div>
+
+            <p class="counter-sub-text">평균 검색 소요 시간</p>
+          </div>
+        </div>
+        <!-- Service Info -->
         <div
-          class="badge-container"
+          class="card-container card-text"
           data-aos="fade-up"
-          data-aos-offset="0"
-          data-aos-duration="1000"
+          data-aos-duration="1600"
         >
-          <a
-            class="anchor"
-            href="https://apps.apple.com/kr/app/%EB%A7%89%EC%B0%A8/id1480522844"
-            ><img class="badge-img" src="./assets/ios-large.png"
-          /></a>
-          <a
-            class="anchor"
-            href="https://play.google.com/store/apps/details?id=com.native_makkcha"
-            ><img class="badge-img" src="./assets/android.png"
-          /></a>
-        </div>
-      </div>
-      <div class="conC">
-        <div
-          class="counter-container"
-          data-aos="slide-up"
-          data-aos-offset="0"
-          data-aos-duration="1000"
-        >
-          <p class="conB-counter">누적 사용자 수</p>
-          <p id="counter1" class="conB-counter"></p>
-        </div>
-        <div
-          class="counter-container"
-          data-aos="slide-up"
-          data-aos-offset="0"
-          data-aos-duration="1000"
-        >
-          <p class="conB-counter">누적 사용자 수</p>
-          <p id="counter2" class="conB-counter"></p>
-        </div>
-        <div
-          class="counter-container"
-          data-aos="slide-up"
-          data-aos-offset="0"
-          data-aos-duration="1000"
-        >
-          <p class="conB-counter">누적 사용자 수</p>
-          <p id="counter3" class="conB-counter"></p>
+          <h1 class="counter-main-text">막차는 어떤 앱인가요?</h1>
+          <div class="card-inner card-inner-text">
+            <h3 class="counter-sub-text">
+              친구들과 놀다가 막차가 얼마나 남았는지 궁금하다면?
+            </h3>
+            <p>
+              서울 경기 인천의 교통 빅데이터를 기반으로 버스와 지하철 환승까지
+              고려해 막차까지 남은 시간을 계산해 알려드립니다.
+            </p>
+            <img class="card" src="./assets/bus_card.png" />
+          </div>
         </div>
       </div>
     </div>
@@ -166,16 +173,46 @@
       window.addEventListener("scroll", () => {
         if (window.scrollY > availHeight * 0.8) {
           let i = 0;
-          theLabel = document.getElementById("counter1");
-          let interval = setInterval(function() {
-            if (i == 2034) clearInterval(interval);
-            theLabel.innerHTML = i;
+          let j = 0;
+          let k = 0;
+          theLabel1 = document.getElementById("userCounter");
+          theLabel2 = document.getElementById("searchCounter");
+          theLabel3 = document.getElementById("timeCounter");
+
+          // userCounter
+          let interval1 = setInterval(function() {
+            if (i == 2034) clearInterval(interval1);
+            theLabel1.innerHTML = i
+              .toString()
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             if (i < 800) i += 20;
             else if (i < 1200) i += 15;
             else if (i < 1400) i += 10;
             else if (i < 1900) i += 5;
             else i++;
           }, 1);
+
+          // searchCounter
+          let interval2 = setInterval(function() {
+            if (j == 52432) clearInterval(interval2);
+            theLabel2.innerHTML = j
+              .toString()
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            if (j < 20000) j += 200;
+            else if (j < 30000) j += 150;
+            else if (j < 48000) j += 100;
+            else if (j < 52300) j += 50;
+            else j += 11;
+          }, 1);
+
+          // timeCounter
+          let interval3 = setInterval(function() {
+            if (k == 3) clearInterval(interval3);
+            theLabel3.innerHTML = k
+              .toString()
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            k++;
+          }, 100);
         }
       });
     </script>
