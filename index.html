@@ -170,8 +170,10 @@
       //   else i++;
       // }, 1);
       let availHeight = window.screen.availHeight;
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > availHeight * 0.8) {
+      let flag = true;
+
+      function handleScrollListener() {
+        if (window.scrollY >= availHeight * 1.2 && flag) {
           let i = 0;
           let j = 0;
           let k = 0;
@@ -213,7 +215,13 @@
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             k++;
           }, 100);
+          flag = false;
         }
+      }
+
+      window.addEventListener("scroll", handleScrollListener);
+      window.addEventListener("scroll", () => {
+        if (window.scrollY < availHeight) flag = true;
       });
     </script>
   </body>
