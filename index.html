@@ -98,6 +98,7 @@
           <b>처음 한 번만</b> 목적지를 입력해 놓으면 현재위치 기준으로 쉽고
           빠르게 막차를 알려줘요~
         </p>
+
         <div
           class="badge-container"
           data-aos="fade-up"
@@ -116,10 +117,67 @@
           /></a>
         </div>
       </div>
+      <div class="conC">
+        <div
+          class="counter-container"
+          data-aos="slide-up"
+          data-aos-offset="0"
+          data-aos-duration="1000"
+        >
+          <p class="conB-counter">누적 사용자 수</p>
+          <p id="counter1" class="conB-counter"></p>
+        </div>
+        <div
+          class="counter-container"
+          data-aos="slide-up"
+          data-aos-offset="0"
+          data-aos-duration="1000"
+        >
+          <p class="conB-counter">누적 사용자 수</p>
+          <p id="counter2" class="conB-counter"></p>
+        </div>
+        <div
+          class="counter-container"
+          data-aos="slide-up"
+          data-aos-offset="0"
+          data-aos-duration="1000"
+        >
+          <p class="conB-counter">누적 사용자 수</p>
+          <p id="counter3" class="conB-counter"></p>
+        </div>
+      </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+
+      // let i = 0;
+      // theLabel = document.getElementById("counter");
+      // let interval = setInterval(function() {
+      //   if (i == 2034) clearInterval(interval);
+      //   theLabel.innerHTML = i;
+      //   if (i < 1000) i += 20;
+      //   else if (i < 1400) i += 15;
+      //   else if (i < 1800) i += 10;
+      //   else if (i < 1900) i += 5;
+      //   else i++;
+      // }, 1);
+      let availHeight = window.screen.availHeight;
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > availHeight * 0.8) {
+          let i = 0;
+          theLabel = document.getElementById("counter1");
+          let interval = setInterval(function() {
+            if (i == 2034) clearInterval(interval);
+            theLabel.innerHTML = i;
+            if (i < 800) i += 20;
+            else if (i < 1200) i += 15;
+            else if (i < 1400) i += 10;
+            else if (i < 1900) i += 5;
+            else i++;
+          }, 1);
+        }
+      });
     </script>
   </body>
 </html>
