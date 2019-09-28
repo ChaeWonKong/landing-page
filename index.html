@@ -183,7 +183,7 @@
 
           // userCounter
           let interval1 = setInterval(function() {
-            if (i == 2034) clearInterval(interval1);
+            if (i == 2547) clearInterval(interval1);
             theLabel1.innerHTML = i
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -196,15 +196,15 @@
 
           // searchCounter
           let interval2 = setInterval(function() {
-            if (j == 52432) clearInterval(interval2);
+            if (j == 63420) clearInterval(interval2);
             theLabel2.innerHTML = j
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             if (j < 20000) j += 200;
             else if (j < 30000) j += 150;
-            else if (j < 48000) j += 100;
-            else if (j < 52300) j += 50;
-            else j += 11;
+            else if (j < 55000) j += 100;
+            else if (j < 62000) j += 50;
+            else j += 10;
           }, 1);
 
           // timeCounter
