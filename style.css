@@ -39,6 +39,7 @@ body {
   position: absolute;
   top: 54vh;
   width: 24vw;
+  filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.4));
 }
 
 .text-light {
