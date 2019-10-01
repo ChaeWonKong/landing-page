@@ -180,9 +180,11 @@ body {
   .conB {
     width: 100%;
   }
-
+  .icon-centered{
+    text-align:center;
+  }
   .icon-img {
-    width: 30%;
+    width: 50%;
     height: relative;
   }
   .mock-img {
