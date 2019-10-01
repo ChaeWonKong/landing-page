@@ -31,3 +31,5 @@ Slack WebHook API
 ```
 https://hooks.slack.com/services/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
 ```
+
+변경사항의 경우 슬랙으로 Notification 제공.
