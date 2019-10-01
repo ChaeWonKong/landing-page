@@ -173,7 +173,7 @@
       let flag = true;
 
       function handleScrollListener() {
-        if (window.scrollY >= availHeight * 1.2 && flag) {
+        if (window.scrollY >= availHeight * 0.6 && flag) {
           let i = 0;
           let j = 0;
           let k = 0;
@@ -187,10 +187,10 @@
             theLabel1.innerHTML = i
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            if (i < 800) i += 20;
-            else if (i < 1200) i += 15;
-            else if (i < 1400) i += 10;
-            else if (i < 1900) i += 5;
+            if (i < 800) i += 100;
+            else if (i < 1200) i += 100;
+            else if (i < 1400) i += 100;
+            else if (i < 2300) i += 100;
             else i++;
           }, 1);
 
@@ -200,11 +200,11 @@
             theLabel2.innerHTML = j
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            if (j < 20000) j += 200;
-            else if (j < 30000) j += 150;
-            else if (j < 55000) j += 100;
+            if (j < 20000) j += 10000;
+            else if (j < 30000) j += 5000;
+            else if (j < 55000) j += 500;
             else if (j < 62000) j += 50;
-            else j += 10;
+            else j += 20;
           }, 1);
 
           // timeCounter
@@ -221,7 +221,7 @@
 
       window.addEventListener("scroll", handleScrollListener);
       window.addEventListener("scroll", () => {
-        if (window.scrollY < availHeight) flag = true;
+       // if (window.scrollY < availHeight) flag = true;
       });
     </script>
   </body>
