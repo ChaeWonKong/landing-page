@@ -55,8 +55,8 @@
           class="text-light"
           data-aos="fade-up"
           data-aos-anchor=".badge-container"
-          data-aos-delay="1000"
-          data-aos-duration="1600"
+          data-aos-delay="200"
+          data-aos-duration="1000"
         >
           잠깐, 막차 몇시야?
         </p>
@@ -64,7 +64,7 @@
         <div
           class="badge-container"
           data-aos="fade-up"
-          data-aos-delay="1000"
+          data-aos-delay="400"
           data-aos-duration="1600"
         >
           <a
@@ -82,8 +82,8 @@
           <img
             class="mock-img"
             data-aos="fade-up"
-            data-aos-delay="2000"
-            data-aos-duration="1600"
+            data-aos-delay="600"
+            data-aos-duration="1000"
             src="./assets/mock.png"
           />
         </div>
@@ -95,11 +95,10 @@
             class="counter-inner"
             data-aos="slide-up"
             data-aos-offset="0"
-            data-aos-duration="1000"
+            data-aos-duration="500"
           >
             <div>
-              <span class="counter-main-text">대학생 </span
-              ><span id="userCounter" class="counter-main-text"></span
+              <span id="userCounter" class="counter-main-text"></span
               ><span class="counter-main-text">명</span>
             </div>
 
@@ -110,7 +109,7 @@
             class="counter-inner"
             data-aos="slide-up"
             data-aos-offset="0"
-            data-aos-duration="1000"
+            data-aos-duration="500"
           >
             <div>
               <span id="searchCounter" class="counter-main-text"></span
@@ -124,7 +123,7 @@
             class="counter-inner"
             data-aos="slide-up"
             data-aos-offset="0"
-            data-aos-duration="1000"
+            data-aos-duration="500"
           >
             <div>
               <span id="timeCounter" class="counter-main-text"></span
@@ -189,8 +188,8 @@
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             if (i < 800) i += 100;
             else if (i < 1200) i += 100;
-            else if (i < 1400) i += 100;
-            else if (i < 2300) i += 100;
+            else if (i < 1400) i += 75;
+            else if (i < 2300) i += 50;
             else i++;
           }, 1);
 
@@ -201,10 +200,10 @@
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             if (j < 20000) j += 10000;
-            else if (j < 30000) j += 5000;
-            else if (j < 55000) j += 500;
-            else if (j < 62000) j += 50;
-            else j += 20;
+            else if (j < 30000) j += 4000;
+            else if (j < 55000) j += 400;
+            else if (j < 62000) j += 40;
+            else j += 10;
           }, 1);
 
           // timeCounter
