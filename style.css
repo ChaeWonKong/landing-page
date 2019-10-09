@@ -97,7 +97,7 @@ body {
 }
 
 .anchor {
-  margin-top: 4vh;
+  display : flex;
   height: 10vh;
 }
 
