@@ -71,7 +71,7 @@ body {
 
 .conB {
   width: 100vw;
-  height: 140vh;
+  height: 170vh;
   background: white;
   display: flex;
   flex-direction: column;
@@ -102,7 +102,7 @@ body {
 }
 
 .counter-container {
-  margin-top: 50vh;
+  margin-top: 100vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -137,13 +137,13 @@ body {
   border: 1px solid #eee;
   width: 80%;
   padding: 3vw;
+  border-radius: 10px;
 }
 
 .card {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   border: 1px solid #eee;
   border-radius: 1.7vw;
-  width: 30vw;
 }
 
 .card-text {
