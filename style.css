@@ -71,7 +71,7 @@ body {
 
 .conB {
   width: 100vw;
-  height: 200vh;
+  height: 170vh;
   background: white;
   display: flex;
   flex-direction: column;
@@ -135,17 +135,15 @@ body {
   align-items: center;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   border: 1px solid #eee;
-  width: 35%;
-  padding: 1vw;
+  width: 80%;
+  padding: 3vw;
   border-radius: 10px;
 }
 
 .card {
-  /*box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   border: 1px solid #eee;
-  border-radius: 1.7vw;*/
-  align-items:center;
-  width: 80%
+  border-radius: 1.7vw;
 }
 
 .card-text {
@@ -226,15 +224,15 @@ body {
   }
 
   .counter-main-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: 0;
     font-weight: bold;
     text-align: center;
   }
 
   .counter-sub-text {
-    text-align: left;
-    font-size: 1.4rem;
+    text-align: center;
+    font-size: 1.2rem;
     margin: 0;
     /* font-weight: bold; */
   }
@@ -250,9 +248,9 @@ body {
   }
 
   .card {
-    /*box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     border: 1px solid #eee;
-    border-radius: 4vw;*/
+    border-radius: 4vw;
     width: 72vw;
   }
 }
