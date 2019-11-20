@@ -1,4 +1,10 @@
 # 막차 랜딩 페이지
+막차 서비스 사용자를 위한 랜딩 페이지.
+iOS 및 Android 설치 페이지로 이동 가능.
+
+|                                            데스크톱 보기                                             |                                             모바일 보기                                             |
+| :--------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
+| ![main_video](https://github.com/ChaeWonKong/image-resource/blob/master/landing1.gif?raw=true) | ![path_video](https://github.com/ChaeWonKong/image-resource/blob/master/landing3.gif?raw=true) |
 
 ## 설치방법
 
