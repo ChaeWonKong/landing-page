@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <!-- GA TAg -->
+      <!-- GA TAg -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -16,8 +16,22 @@
 
       gtag("config", "UA-130545137-2");
     </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <title>막차 : MAKKCHA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-itunes-app" content="app-id=1480522844">
+    <meta name="author" content="왼손잡이들">
+    <meta name="description" content="막차(MAKKCHA)는 낮시간에 비해 부족한 퇴근길, 심야시간에 필요한 교통정보,위치정보 들을 제시하는 서비스입니다. 필요한 정보들을 발견해보세요.">
+    <meta name="keywords" content="막차,makkcha,지하철,버스,택시,심야버스">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="막차 : MAKKCHA">
+    <meta property="og:description" content="막차(MAKKCHA)는 낮시간에 비해 부족한 퇴근길, 심야시간에 필요한 교통정보,위치정보 들을 제시하는 서비스입니다. 필요한 정보들을 발견해보세요.">       
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://makkcha.com">
+    <meta property="og:image" content="https://makkcha.com/assets/ogimage.png">
+    <meta property="og:site_name" content="막차 : MAKKCHA">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="theme-color" content="#000033">
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
@@ -26,25 +40,10 @@
       sizes="96x96"
       href="./assets/favicon-96x96.png"
     />
-    <meta name="google-site-verification" content="Dti86wgBnEAkgriJ5yD4Wn3Ol6fGxNqwOgHCvkXCxmg" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta property="og:title" content="막차" />
-    <meta
-      property="og:description"
-      content="쉽고 빠르게 막차 검색하세요!"
-    />
-    <meta
-      name="description"
-      content="쉽고 빠르게 막차 검색하세요!"
-    />
-    <meta property="og:url" content="https://makkcha.com" />
-    <meta property="og:site_name" content="막차" />
-    <meta
-      property="og:image"
-      content="https://raw.githubusercontent.com/ChaeWonKong/image-resource/master/mcha/graphic.jpg"
-    />
-    <meta property="og:locale" content="ko_KR" />
-    <title>막차</title>
+    
+
+
+
     <span itemscope="" itemtype="http://schema.org/Organization">
     <link itemprop="url" href="http://makkcha.com">
     <a itemprop="sameAs" href="https://blog.naver.com/makkcha"></a> <!--네이버 블로그-->
@@ -165,6 +164,8 @@
         </div>
       </div>
     </div>
+
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -194,27 +195,27 @@
 
           // userCounter
           let interval1 = setInterval(function() {
-            if (i == 4547) clearInterval(interval1);
+            if (i == 5537) clearInterval(interval1);
             theLabel1.innerHTML = i
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             if (i < 800) i += 100;
             else if (i < 1200) i += 200;
             else if (i < 1400) i += 200;
-            else if (i < 4300) i += 100;
+            else if (i < 5200) i += 100;
             else i++;
           }, 1);
 
           // searchCounter
           let interval2 = setInterval(function() {
-            if (j == 80420) clearInterval(interval2);
+            if (j == 90220) clearInterval(interval2);
             theLabel2.innerHTML = j
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             if (j < 20000) j += 10000;
             else if (j < 30000) j += 4000;
             else if (j < 55000) j += 500;
-            else if (j < 80000) j += 1000;
+            else if (j < 90000) j += 1000;
             else j += 10;
           }, 1);
 
@@ -235,5 +236,7 @@
        // if (window.scrollY < availHeight) flag = true;
       });
     </script>
+
+
   </body>
 </html>
